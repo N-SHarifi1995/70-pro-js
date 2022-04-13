@@ -1,0 +1,76 @@
+    @font-face {
+        font-family: 'vazir';
+        src: url('../fonts/vazir.eot');
+        src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        direction: rtl;
+        font-family: 'vazir';
+        height: 4000px;
+        background-color: rgb(51, 51, 51);
+    }
+    
+    .progress-section {
+        position: fixed;
+        width: 70px;
+        top: 40%;
+        right: 50px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+    
+    .progres-wrap {
+        position: relative;
+        height: 100%;
+        width: 10px;
+        background-color: rgb(148, 148, 148);
+        border: 2px solid balck;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .progress-line {
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        width: 5px;
+        background-color: rgb(250, 243, 243);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .progress-num {
+        color: white;
+    }
+    
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 26px
+    }
