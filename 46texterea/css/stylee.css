@@ -1,0 +1,47 @@
+                                                                    @font-face {
+                                                                        font-family: 'vazir';
+                                                                        src: url('../fonts/vazir.eot');
+                                                                        src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                                                                    }
+                                                                    
+                                                                    * {
+                                                                        padding: 0;
+                                                                        margin: 0;
+                                                                        outline: none;
+                                                                    }
+                                                                    
+                                                                    body {
+                                                                        direction: rtl;
+                                                                        font-family: 'vazir';
+                                                                        height: 100vh;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                    }
+                                                                    
+                                                                    .field-outer {
+                                                                        width: 400px;
+                                                                        position: relative;
+                                                                        background: burlywood;
+                                                                    }
+                                                                    
+                                                                    .field-outer .field {
+                                                                        background: rgb(245, 142, 8);
+                                                                        width: 100%;
+                                                                    }
+                                                                    
+                                                                    .field-outer .field textarea {
+                                                                        width: 100%;
+                                                                        height: 200px;
+                                                                        border: .1rem solid black;
+                                                                        padding: 10px;
+                                                                        resize: none;
+                                                                        font-family: 'vazir';
+                                                                    }
+                                                                    
+                                                                    .field-outer .remaining {
+                                                                        position: absolute;
+                                                                        bottom: 0;
+                                                                        left: -10px;
+                                                                        color: gray;
+                                                                    }

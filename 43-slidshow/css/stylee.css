@@ -1,0 +1,80 @@
+                    @font-face {
+                        font-family: 'vazir';
+                        src: url('../fonts/vazir.eot');
+                        src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                    }
+                    
+                    * {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    body {
+                        direction: rtl;
+                        font-family: 'vazir';
+                        height: 100vh;
+                        background-color: rgb(85, 79, 79);
+                    }
+                    
+                    .slider {
+                        position: relative;
+                        margin: 50px auto;
+                        width: 900px;
+                        border: 0.5rem solid rgb(0, 146, 165);
+                    }
+                    
+                    .item {
+                        height: 100%;
+                        width: 100%;
+                        display: none;
+                        position: relative;
+                    }
+                    
+                    .item img {
+                        width: 100%;
+                        height: 600px;
+                    }
+                    
+                    .item.active {
+                        display: block;
+                    }
+                    
+                    .item .content {
+                        position: absolute;
+                        background: rgba(0, 0, 0, 0.6);
+                        color: white;
+                        bottom: 0;
+                        height: 60px;
+                        width: 100%;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .control {
+                        position: absolute;
+                        top: 50%;
+                        right: 5%;
+                        left: 5%;
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    .control .left,
+                    .right {
+                        width: 40px;
+                        height: 40px;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgb(0, 146, 165);
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
