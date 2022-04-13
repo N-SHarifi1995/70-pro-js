@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'vazir';
+    height: 100vh;
+    background-color: rgb(200, 197, 197);
+}
+
+.container {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .col {
+    width: calc(50% - 25px);
+}
+
+.col img {
+    width: 100%
+}
+
+.col .top {
+    width: 100%;
+    position: relative;
+}
+
+.col .top .cover {
+    height: 360px;
+}
+
+.col .play {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.col .box {
+    background-color: rgb(85, 81, 81);
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    height: 120px;
+}
+
+.col .box p {
+    color: cornsilk;
+    padding: 0 30px;
+}
+
+.col .box:nth-child(1) {
+    margin-top: 0px;
+}
+
+.col .box .smallimg {
+    position: relative;
+    height: 100%;
+}
+
+.col .box .smallimg .play {
+    height: 60px;
+    width: 60px;
+}
+
+.col .box .smallimg .cover {
+    height: 100%;
+    width: 200px;
+}
+
+.videoplayer {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#videoplayer {
+    display: none;
+}
+
+#videoplayer img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+}

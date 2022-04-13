@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="top">
+                    <img src="img/Screenshot (4).png" class="cover" alt=" ">
+                    <img src="img/play.png " class="play " onclick="show('video/1.mp4')" alt=" ">
+                </div>
+
+            </div>
+            <div class="col ">
+                <div class="box ">
+                    <div class="smallimg ">
+                        <img src="img/Screenshot (6).png " class="cover " alt=" ">
+                        <img src="img/play.png " class="play " onclick="show('video/2.mp4')" alt=" ">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in deleniti delectus itaigendi, eos.</p>
+                </div>
+                <div class="box ">
+                    <div class="smallimg ">
+                        <img src="img/Screenshot (8).png " class="cover " alt=" ">
+                        <img src="img/play.png " class="play " onclick="show('video/3.mp4')" alt=" ">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eomnis accusamus sit consectetur adipisci ut! Eligendi, eos.</p>
+                </div>
+                <div class="box ">
+                    <div class="smallimg ">
+                        <img src="img/Screenshot (7).png " class="cover " alt=" ">
+                        <img src="img/play.png " class="play " onclick="show('video/4.mp4')" alt=" ">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet cio illo, omnis accusamus sit consectetur adipisci ut! Eligendi, eos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videoplayer" id="videoplayer">
+        <img src="img/close.png" onclick="stop()" alt="">
+        <video controls autoplay muted width="100%" id="myvideo"><source src="video/2.mp4 " type="video/mp4"></video>
+
+    </div>
+</body>
+<script src="script/all.min.js "></script>
+<script src="script/script.js "></script>
+
+</html>
