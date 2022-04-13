@@ -1,0 +1,86 @@
+                                                                        @font-face {
+                                                                            font-family: 'vazir';
+                                                                            src: url('../fonts/vazir.eot');
+                                                                            src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                                                                        }
+                                                                        
+                                                                        * {
+                                                                            padding: 0;
+                                                                            margin: 0;
+                                                                            outline: none;
+                                                                        }
+                                                                        
+                                                                        body {
+                                                                            direction: rtl;
+                                                                            font-family: 'vazir';
+                                                                        }
+                                                                        
+                                                                        html {
+                                                                            scroll-behavior: smooth;
+                                                                        }
+                                                                        
+                                                                        section {
+                                                                            height: 100vh;
+                                                                            width: 100%;
+                                                                            background: crimson;
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                        }
+                                                                        
+                                                                        #home {
+                                                                            background: crimson;
+                                                                        }
+                                                                        
+                                                                        #content {
+                                                                            background: rgb(0, 182, 85);
+                                                                        }
+                                                                        
+                                                                        #service {
+                                                                            background: rgb(248, 9, 136);
+                                                                        }
+                                                                        
+                                                                        #about {
+                                                                            background: rgb(220, 167, 20);
+                                                                        }
+                                                                        
+                                                                        #footer {
+                                                                            background: rgb(20, 73, 220);
+                                                                        }
+                                                                        
+                                                                        nav {
+                                                                            position: sticky;
+                                                                            background: white;
+                                                                            top: 0;
+                                                                        }
+                                                                        
+                                                                        nav .container {
+                                                                            width: 90%;
+                                                                            margin: 0 auto;
+                                                                            padding: 20px;
+                                                                            text-align: center;
+                                                                        }
+                                                                        
+                                                                        nav .container ul {
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                            list-style: none;
+                                                                        }
+                                                                        
+                                                                        nav .container ul li {
+                                                                            padding: 10px 20px;
+                                                                            margin: 0 30px;
+                                                                        }
+                                                                        
+                                                                        nav .container ul li a {
+                                                                            text-decoration: none;
+                                                                        }
+                                                                        
+                                                                        nav .container ul li.active a {
+                                                                            color: white;
+                                                                        }
+                                                                        
+                                                                        nav .container ul li.active {
+                                                                            background: crimson;
+                                                                        }
