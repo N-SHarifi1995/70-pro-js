@@ -1,0 +1,68 @@
+            @font-face {
+                font-family: 'vazir';
+                src: url('../fonts/vazir.eot');
+                src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+            }
+            
+            * {
+                padding: 0;
+                margin: 0;
+                outline: none;
+                text-decoration: none;
+                box-sizing: border-box;
+                list-style: none;
+            }
+            
+            body {
+                direction: rtl;
+                font-family: 'vazir';
+                background: white;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            form {
+                width: 600;
+                text-align: center;
+            }
+            
+            div {
+                position: relative;
+                margin-top: 20px;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 25px;
+            }
+            
+            .select,
+            input {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            input {
+                direction: ltr;
+                padding-left: 80px;
+                box-sizing: border-box;
+            }
+            
+            .phone span {
+                position: absolute;
+                left: 0;
+                width: 65px;
+                height: 40px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 2px solid darkgray
+            }
