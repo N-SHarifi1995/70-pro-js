@@ -1,0 +1,169 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    height: 100vh;
+}
+
+.profitio {
+    padding: 120px 15px;
+    background: lightgray;
+}
+
+.container {
+    width: 1400px;
+    margin: auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h3 {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.title h3::before {
+    content: '';
+    width: 130px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: #df350a;
+}
+
+.tab-mene {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-mene ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.tab-mene ul li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.tab-mene ul li.active {
+    color: #c52d07
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery .item {
+    width: 32.25%;
+    margin-top: 10px
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.gallery .item .inner {
+    position: relative;
+}
+
+.gallery .item .inner .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(100, 96, 96, 0.178);
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.gallery .item:hover .inner .overlay {
+    opacity: 1;
+}
+
+.gallery .item .inner .overlay svg {
+    width: 40px;
+    height: 40px;
+    background: #d63031;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.gallery .item .inner .overlay h3 {
+    color: white;
+}
+
+.lightbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(20, 20, 20, 0.644);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    width: 80%;
+    height: 70%;
+}
+
+.lightbox svg {
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.show {
+    display: flex;
+}

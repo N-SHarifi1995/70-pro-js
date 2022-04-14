@@ -1,0 +1,119 @@
+﻿    @font-face {
+        font-family: 'vazir';
+        src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.woff2') format('woff2');
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'vazir';
+        direction: rtl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../img/1.webp);
+    }
+    
+    .container {
+        width: 400px;
+        background: rgba(246, 242, 242, 0.945);
+        border-radius: 15px;
+        -wbkit-border-radius: 15%;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        -webkit-border-radius: 15px;
+    }
+    
+    .header-title {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 2px solid darkgray;
+        display: block;
+    }
+    
+    .form {
+        position: relative;
+    }
+    
+    .form-control {
+        padding: 20px 20px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+    
+    .form-control input {
+        display: block;
+        font-family: 'vazir';
+        padding: 10px;
+        border: 2px solid rgb(235, 228, 228);
+        width: 100%;
+    }
+    
+    .form-control.eror input {
+        border: 2px solid rgb(236, 50, 50);
+    }
+    
+    .form-control.sucess input {
+        border: 2px solid rgb(28, 141, 81);
+    }
+    
+    .form-control svg {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        visibility: hidden;
+    }
+    
+    .form-control .fa-check-circle {
+        color: green;
+    }
+    
+    .form-control.sucess .fa-check-circle {
+        visibility: visible;
+    }
+    
+    .form-control .fa-exclamation-triangle {
+        color: red;
+    }
+    
+    .form-control.eror .fa-exclamation-triangle {
+        visibility: visible;
+    }
+    
+    .form-control span {
+        visibility: hidden;
+        color: red;
+        font-size: 14px;
+    }
+    
+    .form-control.eror span {
+        visibility: visible;
+    }
+    
+    button {
+        background: green;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        width: 80px;
+        margin: 10px 30px;
+    }
