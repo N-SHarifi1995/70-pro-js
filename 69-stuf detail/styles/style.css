@@ -1,0 +1,162 @@
+﻿    @font-face {
+        font-family: 'vazir';
+        src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.woff2') format('woff2');
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'vazir';
+        direction: rtl;
+    }
+    
+    h1 {
+        position: relative;
+        top: 20%;
+        right: 20%;
+        width: 3%;
+        margin: 20px 0;
+    }
+    
+    h1::after {
+        content: attr(data-count);
+        position: absolute;
+        top: -10px;
+        right: 16px;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        padding: auto;
+        opacity: 0
+    }
+    
+    h1.zero::after {
+        opacity: 1;
+    }
+    
+    .alert {
+        width: 300px;
+        padding: 10px;
+        background-color: red;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+        text-align: center;
+    }
+    
+    .alert::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid red;
+        position: absolute;
+        top: 8px;
+        right: -10px;
+    }
+    
+    section {
+        height: 450px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(211, 209, 209);
+        margin: auto;
+    }
+    
+    section .items {
+        width: 10%;
+        height: 100%;
+    }
+    
+    section .items img {
+        width: 100%;
+        height: 60px;
+        opacity: 0.5;
+        margin: 10px 0;
+    }
+    
+    section .items img.active {
+        opacity: 1;
+        border: 2px solid black;
+    }
+    
+    section .main {
+        width: 50%;
+        height: 100%;
+    }
+    
+    section .main img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    section .main video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    section .details {
+        width: 30%;
+    }
+    
+    section .details h1 {
+        font-size: 20px;
+    }
+    
+    section .details ul {
+        list-style: none;
+    }
+    
+    section .details ul span {
+        color: green;
+        margin-left: 5px;
+    }
+    
+    section .details strong {
+        color: green;
+        margin-left: 5px;
+    }
+    
+    section .buttons {
+        margin-top: 25px;
+        text-align: center;
+        width: 80%;
+    }
+    
+    section .buttons button {
+        padding: 10px;
+        border-radius: 15%;
+        outline: none;
+        font-family: 'vazir';
+        font-size: 10px;
+        color: white;
+        width: 30%;
+    }
+    
+    section .buttons :nth-child(1) {
+        background: green;
+    }
+    
+    section .buttons :nth-child(2) {
+        background: orange;
+        margin-right: 15px;
+        ;
+    }

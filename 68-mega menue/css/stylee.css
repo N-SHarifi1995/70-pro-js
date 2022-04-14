@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: 'vazir';
+    height: 100vh;
+    background: url('/img/banner.jpg');
+    background-position: center;
+}
+
+header {
+    width: 1170;
+    height: 50px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgb(56, 51, 51);
+}
+
+.container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.container .logo {
+    color: #c00;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.container #navbar {
+    list-style: none;
+    display: flex;
+}
+
+.container #navbar li {
+    margin-left: 30px;
+}
+
+.container #navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .menue1 {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+}
+
+.container .menue1 {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    right: -100%;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.container .menue1 ul li {
+    line-height: 3;
+    margin: 0 30px;
+}
+
+.container .menue1 ul {
+    list-style: none;
+}
+
+.container .menue1 ul li a {
+    color: rgb(5, 95, 80)!important;
+}
+
+.container .menue1 ul li img {
+    width: 250px;
+    height: 180px;
+}
+
+.drop-one:hover .menue1 {
+    right: 0;
+}
+
+.drop-one svg {
+    margin-right: 5px;
+}
+
+.drop-one:hover svg {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+@media screen and (max-width:992px) {
+    .container #navbar {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: rgb(58, 54, 54);
+        width: 100%;
+    }
+    .container #navbar li {
+        margin: 15px 0;
+    }
+    .container .menue1 {
+        display: none;
+        right: 0;
+        top: 0;
+    }
+    .container .menue1.show {
+        display: block;
+        position: relative;
+    }
+}
