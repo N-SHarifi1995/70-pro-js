@@ -1,0 +1,149 @@
+    @font-face {
+        font-family: 'vazir';
+        src: url('../fonts/vazir.eot');
+        src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        direction: rtl;
+        font-family: 'vazir';
+        height: 100vh;
+    }
+    
+    h1 {
+        position: relative;
+        top: 20px;
+        margin-right: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    h1::before {
+        width: 20px;
+        height: 20px;
+        content: attr(data-count);
+        position: absolute;
+        top: -12px;
+        left: 17px;
+        background-color: #c00;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+    }
+    
+    h1.zero::before {
+        opacity: 1;
+    }
+    
+    section {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px auto;
+        flex-wrap: wrap;
+    }
+    
+    section div {
+        width: 32.3%;
+        position: relative;
+        background-color: lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 30px
+    }
+    
+    section div img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    section div h6 {
+        padding: 30px;
+        font-size: 10px;
+    }
+    
+    section div p {
+        font-size: 10px;
+    }
+    
+    section div button {
+        width: 100%;
+        border: none;
+        color: white;
+        background-color: #c00;
+        padding: 10px;
+    }
+    
+    .select {
+        width: 80vw;
+        height: 70vh;
+        position: absolute;
+        top: 50%;
+        background-color: rgb(54, 54, 54);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        display: none;
+        overflow-y: scroll;
+    }
+    
+    .select div {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        position: relative;
+        margin: 15px 0px;
+        background: darkgray;
+    }
+    
+    .select.show {
+        display: block;
+    }
+    
+    .select div img {
+        width: 300px;
+    }
+    
+    .select div p {
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .select div h6 {
+        position: absolute;
+        bottom: 30px;
+        left: 400px;
+        color: green;
+    }
+    
+    .select div button {
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+        color: white;
+        background-color: #c00;
+        border: none;
+        padding: 10px 20px;
+    }
