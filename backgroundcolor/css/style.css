@@ -1,0 +1,51 @@
+                        * {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        body {
+                            direction: rtl;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 100vh;
+                        }
+                        
+                        .box {
+                            position: absolute;
+                            top: 20px;
+                            right: 50px;
+                            width: 200px;
+                            height: 100px;
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        .box a {
+                            width: 40px;
+                            height: 40px;
+                            text-indent: -999px;
+                            margin: 5px
+                        }
+                        
+                        #red {
+                            background-color: #ff9191;
+                        }
+                        
+                        #blue {
+                            background-color: rgb(56, 56, 170);
+                        }
+                        
+                        #yellow {
+                            background-color: rgb(253, 253, 13);
+                        }
+                        
+                        #black {
+                            background-color: rgb(46, 42, 42);
+                        }
+                        
+                        #white {
+                            background-color: rgb(55, 134, 134);
+                        }
