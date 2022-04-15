@@ -1,0 +1,119 @@
+﻿                            @font-face {
+                                font-family: 'vazir';
+                                src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.woff2') format('woff2');
+                            }
+                            
+                            * {
+                                padding: 0;
+                                margin: 0;
+                                box-sizing: border-box;
+                                font-family: 'vazir';
+                            }
+                            
+                            body {
+                                font-family: 'vazir';
+                                direction: rtl;
+                                height: 100vh;
+                            }
+                            
+                            ‌section {
+                                width: 100%;
+                                height: 100vh;
+                                display: flex;
+                                align-items: center;
+                                justify-self: flex-start;
+                            }
+                            
+                            .container {
+                                height: 100vh;
+                                width: 80%;
+                                max-width: 1400px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+                            
+                            .bg {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 100%;
+                                z-index: -1;
+                                overflow: hidden;
+                            }
+                            
+                            .bg img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: all .8s ease-in-out;
+                                -webkit-transition: all .8s ease-in-out;
+                                -moz-transition: all .8s ease-in-out;
+                                -ms-transition: all .8s ease-in-out;
+                                -o-transition: all .8s ease-in-out;
+                            }
+                            
+                            @keyframes animate {
+                                0% {
+                                    opacity: 0;
+                                    transform: scale(1);
+                                    -webkit-transform: scale(1);
+                                    -moz-transform: scale(1);
+                                    -ms-transform: scale(1);
+                                    -o-transform: scale(1);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: scale(1.12);
+                                    -webkit-transform: scale(1.12);
+                                    -moz-transform: scale(1.12);
+                                    -ms-transform: scale(1.12);
+                                    -o-transform: scale(1.12);
+                                }
+                            }
+                            
+                            .bg::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, .5);
+                            }
+                            
+                            .text {
+                                position: relative;
+                            }
+                            
+                            a {
+                                text-decoration: none;
+                                color: whitesmoke;
+                            }
+                            
+                            h1 {
+                                font-size: 40px;
+                                display: flex;
+                                align-items: flex-start;
+                                color: whitesmoke;
+                            }
+                            
+                            p {
+                                color: whitesmoke;
+                            }
+                            
+                            h1 span {
+                                margin-right: 30px;
+                            }
+                            
+                            .line {
+                                width: 220px;
+                                height: 15px;
+                                position: absolute;
+                                left: 0;
+                                bottom: -15px;
+                                border: 3px solid blueviolet;
+                            }
