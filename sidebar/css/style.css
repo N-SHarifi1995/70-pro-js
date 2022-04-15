@@ -1,0 +1,127 @@
+                @font-face {
+                    font-family: 'vazir';
+                    src: url('../fonts/vazir.eot');
+                    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                }
+                
+                * {
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                body {
+                    direction: rtl;
+                    font-family: 'vazir';
+                    height: 100vh;
+                    overflow-x: hidden;
+                }
+                
+                header {
+                    top: 0;
+                    right: 0;
+                    height: 200px;
+                    width: 100%;
+                    background-color: darkblue;
+                    color: white;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                
+                header p {
+                    font-size: 20px;
+                    width: 900px;
+                    text-align: center;
+                }
+                
+                .content {
+                    color: black;
+                    font-size: 15px;
+                    width: 900px;
+                    margin: 50px auto;
+                }
+                
+                .sidebar {
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: center;
+                    top: 0;
+                    left: -300px;
+                    height: 100vh;
+                    background-color: rgb(39, 39, 117);
+                    width: 300px;
+                    padding: 50px 0;
+                    transition: left .9s ease-in-out;
+                    -webkit-transition: left .9s ease-in-out;
+                    -moz-transition: left .9s ease-in-out;
+                    -ms-transition: left .9s ease-in-out;
+                    -o-transition: left .9s ease-in-out;
+                    visibility: hidden;
+                }
+                
+                .sidebar.active {
+                    left: 0;
+                    visibility: visible;
+                }
+                
+                .sidebar img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                
+                .sidebar ul {
+                    list-style: none;
+                    margin: 50px auto;
+                    width: 100%;
+                }
+                
+                .sidebar ul li {
+                    text-align: center;
+                    border-top: 1px solid rgb(41, 25, 179);
+                    border-bottom: 1px solidrgb(41, 25, 179);
+                    transition: background .3s ease-in-out;
+                    -webkit-transition: background .3s ease-in-out;
+                    -moz-transition: background .3s ease-in-out;
+                    -ms-transition: background .3s ease-in-out;
+                    -o-transition: background .3s ease-in-out;
+                }
+                
+                .sidebar ul li a {
+                    text-decoration: none;
+                    color: cornsilk;
+                    display: block;
+                    padding: 20px 0;
+                }
+                
+                .sidebar ul li:hover {
+                    background-color: rgb(77, 77, 144);
+                }
+                
+                .sidebar button {
+                    position: absolute;
+                    top: 0;
+                    right: -40px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgb(39, 39, 117);
+                    border: none;
+                    visibility: visible;
+                }
+                
+                .sidebar button svg {
+                    color: white;
+                    font-size: 20px;
+                    animation: fa-spin 3s infinite linear;
+                    -webkit-animation: fa-spin 3s infinite linear;
+                }

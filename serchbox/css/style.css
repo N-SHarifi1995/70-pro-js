@@ -1,0 +1,64 @@
+                        @font-face {
+                            font-family: 'vazir';
+                            src: url('../fonts/vazir.eot');
+                            src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                        }
+                        
+                        * {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        body {
+                            direction: rtl;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            font-family: 'vazir';
+                            height: 100vh;
+                            background: linear-gradient(180deg, purple, rgb(149, 67, 136), rgb(255, 247, 254));
+                        }
+                        
+                        .search {
+                            height: 50px;
+                            position: relative;
+                        }
+                        
+                        .search input {
+                            height: 50px;
+                            width: 20px;
+                            padding: 5px 10px;
+                            font-family: 'vazir';
+                            font-size: 18px;
+                            border: none;
+                            box-sizing: border-box;
+                            transform: width .4s ease;
+                            -webkit-transform: width .4s ease;
+                            -moz-transform: width .4s ease;
+                            -ms-transform: width .4s ease;
+                            -o-transform: width .4s ease;
+                        }
+                        
+                        .search.active input {
+                            width: 300px;
+                        }
+                        
+                        .search button {
+                            height: 50px;
+                            width: 50px;
+                            right: 0;
+                            top: 0;
+                            position: absolute;
+                            border: none;
+                            cursor: pointer;
+                            transform: right .4s ease;
+                            -webkit-transform: right .4s ease;
+                            -moz-transform: right .4s ease;
+                            -ms-transform: right .4s ease;
+                            -o-transform: right .4s ease;
+                        }
+                        
+                        .search.active button {
+                            right: 300px;
+                        }

@@ -1,0 +1,138 @@
+        @font-face {
+            font-family: 'vazir';
+            src: url('../fonts/vazir.eot');
+            src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            direction: rtl;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'vazir';
+            height: 100vh;
+            background: lightblue;
+        }
+        
+        .action {
+            top: 35%;
+            right: 50%;
+            position: fixed;
+            transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            -moz-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            -o-transform: translateX(50%);
+        }
+        
+        .action .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .action .profile img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+        .action .menue {
+            top: 150px;
+            position: absolute;
+            right: 0;
+            width: 400px;
+            background: #fff;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            opacity: 0;
+            transform: translateY(80px);
+            -webkit-transform: translateY(80px);
+            -moz-transform: translateY(80px);
+            -ms-transform: translateY(80px);
+            -o-transform: translateY(80px);
+            transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+        }
+        
+        .action .menue.active {
+            opacity: 1;
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+        
+        .action .menue::before {
+            height: 40px;
+            width: 40px;
+            top: -10px;
+            right: 40px;
+            background: #fff;
+            content: '';
+            position: absolute;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+        
+        .action .menue h3 {
+            padding: 20px;
+            font-weight: 900;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .action .menue h3 span {
+            font-size: 17px;
+            color: lightslategray;
+        }
+        
+        .action .menue ul {
+            width: 100%;
+            list-style: none;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+        
+        .action .menue ul li {
+            width: 100%;
+            display: flex;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+        
+        .action .menue ul li img {
+            width: 30px;
+            margin-left: 10px;
+            opacity: 0.6;
+        }
+        
+        .action .menue ul li a {
+            text-decoration: none;
+            color: darkblue;
+        }
