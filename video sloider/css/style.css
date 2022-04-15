@@ -1,0 +1,72 @@
+                            @font-face {
+                                font-family: 'vazir';
+                                src: url('../fonts/vazir.eot');
+                                src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+                            }
+                            
+                            * {
+                                padding: 0;
+                                margin: 0;
+                            }
+                            
+                            body {
+                                direction: rtl;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                justify-content: center;
+                                font-family: 'vazir';
+                                height: 100vh;
+                            }
+                            
+                            section {
+                                height: 100%;
+                                width: 100%;
+                                position: relative;
+                            }
+                            
+                            section video {
+                                height: 100%;
+                                width: 100%;
+                                position: absolute;
+                                object-fit: cover;
+                            }
+                            
+                            section .navigator {
+                                position: absolute;
+                                bottom: 50px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                -webkit-transform: translateX(-50%);
+                                -moz-transform: translateX(-50%);
+                                -ms-transform: translateX(-50%);
+                                -o-transform: translateX(-50%);
+                                display: flex;
+                                width: 60vw;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            
+                            section .navigator li {
+                                width: 210px;
+                                height: 130px;
+                                justify-content: center;
+                                align-items: center;
+                                display: flex;
+                                background: white;
+                                opacity: 0.6;
+                                border-radius: 15px;
+                                -webkit-border-radius: 15px;
+                                -moz-border-radius: 15px;
+                                -ms-border-radius: 15px;
+                                -o-border-radius: 15px;
+                            }
+                            
+                            section .navigator li:hover {
+                                opacity: 1;
+                            }
+                            
+                            section .navigator li img {
+                                width: 200px;
+                                border-radius: 15px;
+                            }
